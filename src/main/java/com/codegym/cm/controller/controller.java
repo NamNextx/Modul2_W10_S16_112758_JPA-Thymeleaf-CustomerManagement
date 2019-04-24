@@ -1,4 +1,4 @@
-package com.codegym;
+package com.codegym.cm.controller;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
