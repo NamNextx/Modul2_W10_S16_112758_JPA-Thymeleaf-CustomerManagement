@@ -22,6 +22,12 @@ public class CustomerController {
     @PostMapping("/create-customer")
     public ModelAndView saveCustomer(@ModelAttribute("customer") Customer customer){
         customerService.save(customer);
+
+        ModelAndView modelAndView=new ModelAndView("/customer/create");
+        modelAndView.addObject("customer",new Customer());
+        modelAndView.addObject("message","new customer create!");
+        return modelAndView;
+
     }
 
 }
